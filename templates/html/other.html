@@ -1,0 +1,37 @@
+{{ ann }}
+
+<link rel="stylesheet" href="/static/style.css" />
+<br />
+<button onclick="location='index.html'">Back</button>
+<br />
+<br />
+<div>
+  <h1>Steps:</h1>
+  <p>
+    We can do this by looking for extensions where a feature called innerHTML is
+    being used in a risky way. It can be user either in the website of the
+    extension or in any "chrome-extension://" block page.
+    <br />
+    We found that the following extensions are/used to use unsafe uses of innerHTML: <br />
+    <br />
+    <li>Securly</li>
+    <li>GoGuardian (No longer available)</li>
+    <li>Blocksi</li>
+    <li>iBoss</li>
+    <li>Securly Classroom</li>
+    <li>Cisco Umbrella</li>
+    <li>Impero</li>
+  </p>
+  <br />
+  <div>
+    <p>
+      To actually test this stuff, in the sites/extension's url params, for
+      example, https://example.com/?user=Anonymous This is determined by luck,
+      if they use textContent, this'll not be possible, if innerHTML you'll be
+      able to craft a URL similar to
+      <b>https://example.com/?user=&lt;h1&gtTesting&lt;/h1&gt</b> And your
+      output will be the string/HTML code you used. I'd like to see where this
+      goes as people will likely be finding these uses of innerHTML.
+    </p>
+  </div>
+</div>

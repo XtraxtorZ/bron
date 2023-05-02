@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <link rel="stylesheet" href="/static/style.css?version=2.3" />
+{{ ann }}
+  <br />
+  <button onclick="location='/index.html'">Back</button>
+  <h1>Custom innerHTML Page.</h1>
+  <div>
+    <p>
+      To make this work, you need to discover an HTML Injection bug in a website
+      or extension, specifically the innerHTML exploit. Refer to
+      <a href="/other">here</a> on how to do so. Once you have found the
+      bug, input a URL with a param (e.g., https://example.com/?user=) whereas
+      after the ?user= you'll put your HTML code in the box below. Do not
+      include anything after the URL param you have discovered.
+    </p>
+    <p>Option A - Slicker UI</p>
+    <br />
+    <input
+      id="url"
+      placeholder="Put URL here"
+      style="color: rgb(0, 0, 0) !important"
+    />
+    <button onclick="otherExploit()">Open Page</button>
+    <footer>
+      <p>Made by Aka, but nice#5094 on discord</p>
+      <br />
+    </footer>
+    <hr />
+    <br />
+    <p>
+      Option B - More instructions, less sleek, will prevent extension reload
+      meanwhile typing.
+    </p>
+    <div>
+      <button onclick="otherPromptExploit()">Exploit</button>
+      <p>Made by justsayb#9170 on discord</p>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
